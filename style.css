@@ -1,0 +1,54 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto", sans-serif;
+	background: hsl(139 80% 16%)
+}
+
+.app-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+label {
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid rgb(200, 200, 200);
+	border-width: 1px 0 0 0;
+	background: rgb(255, 255, 255);
+	overflow: hidden;
+}
+
+label:first-child {
+	border-radius: 10px 10px 0 0;
+	border-width: 0;
+}
+
+label:last-child {
+	border-radius: 0 0 10px 10px;
+}
+
+input {
+	margin: 20px;
+}
+
+p {
+	width: 30rem;
+	padding: 20px;
+	display: block;
+	font-size: 1.25rem;
+	border-left: 1px solid rgb(200, 200, 200);
+}
+
+input:checked + p {
+	background: rgb(245, 245, 245);
+	text-decoration: line-through;
+}
